@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Frutiger;
+  src: url(./font/FrutigerLTStd-Black.woff);
+}
+
+.modal {
+  position: fixed;
+  width: 1000px;
+  height: 700px;
+  float: center;
+  top: 10px;
+  z-index: 2;
+  background: url('./image/box_help.png') no-repeat;
+  background-size: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  font-family: Frutiger;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal-content {
+  border-radius: 15px;
+  margin-top: 7px;
+  margin-left: -50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  font-family: Frutiger;
+  color: white;
+  width: 94%;
+  height: 92%;
+  transform: translateY(-200px);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 98%;
+  height: 7%;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 3em;
+}
+
+.modal-body {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 98%;
+  height: 90%;
+  border-radius: 15px;
+}
+.close-help {
+  float: right;
+}
