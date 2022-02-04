@@ -18,7 +18,7 @@ export default function App() {
     }
   };
 
-  var hidden = '-----------------';
+  var hidden = '...';
   var money = '15.800.000';
   var counter = 0;
   var value = hidden;

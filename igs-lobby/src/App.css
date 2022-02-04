@@ -5,10 +5,10 @@
 
 .App {
   text-align: center;
-  background-image: url('./image/background.png');
+  background: url('./image/background.png') no-repeat;
   font-family: Frutiger;
-  overflow: hidden;
-  overflow-y: hidden;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 .App-header {
